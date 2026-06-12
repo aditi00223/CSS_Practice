@@ -1,0 +1,166 @@
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Registration Form</title>
+
+    <style>
+        body {
+            background-image: url("bmw.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            font-family: Arial, sans-serif;
+        }
+
+        h2 {
+            text-align: center;
+            color: #00BFFF;
+            font-size: 36px;
+            text-shadow: 2px 2px 5px black;
+        }
+
+        table {
+            background-color: rgba(0, 51, 102, 0.9);
+            color: white;
+            border: 2px solid #00BFFF;
+            margin: auto;
+            border-radius: 15px;
+            box-shadow: 0px 0px 25px #00BFFF;
+        }
+
+        td {
+            padding: 12px;
+            border: 1px solid #00BFFF;
+        }
+
+        label {
+            color: white;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        input[type="date"],
+        input[type="file"] {
+            width: 220px;
+            padding: 6px;
+            border: 1px solid #00BFFF;
+            border-radius: 5px;
+            background-color: #E6F7FF;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            accent-color: #00BFFF;
+        }
+
+        input[type="submit"] {
+            background-color: #00BFFF;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #008CBA;
+        }
+
+        input[type="reset"] {
+            background-color: #1E1E1E;
+            color: white;
+            padding: 10px 20px;
+            border: 1px solid #00BFFF;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        input[type="reset"]:hover {
+            background-color: #333333;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Registration Form</h2>
+
+    <form>
+        <table border="1" cellspacing="0">
+
+            <tr>
+                <td><label for="name">Name</label></td>
+                <td><input type="text" id="name" required></td>
+            </tr>
+
+            <tr>
+                <td><label for="email">Email</label></td>
+                <td><input type="email" id="email" required></td>
+            </tr>
+
+            <tr>
+                <td><label for="phone">Phone</label></td>
+                <td><input type="tel" id="phone" required></td>
+            </tr>
+
+            <tr>
+                <td><label for="dob">Date of Birth</label></td>
+                <td><input type="date" id="dob" required></td>
+            </tr>
+
+            <tr>
+                <td><label>Gender</label></td>
+                <td>
+                    <input type="radio" id="male" name="gender">
+                    <label for="male">Male</label>
+
+                    <input type="radio" id="female" name="gender">
+                    <label for="female">Female</label>
+
+                    <input type="radio" id="other" name="gender">
+                    <label for="other">Other</label>
+                </td>
+            </tr>
+
+            <tr>
+                <td><label>Skills</label></td>
+                <td>
+                    <input type="checkbox" id="html">
+                    <label for="html">HTML</label>
+
+                    <input type="checkbox" id="css">
+                    <label for="css">CSS</label>
+
+                    <input type="checkbox" id="js">
+                    <label for="js">JavaScript</label>
+                </td>
+            </tr>
+
+            <tr>
+                <td><label for="resume">Upload Resume</label></td>
+                <td><input type="file" id="resume" required></td>
+            </tr>
+
+            <tr>
+                <td><label for="photo">Upload Photo</label></td>
+                <td><input type="file" id="photo" required></td>
+            </tr>
+
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="submit" value="Register">
+                    <input type="reset" value="Reset">
+                </td>
+            </tr>
+
+        </table>
+    </form>
+
+</body>
+</html>
+
