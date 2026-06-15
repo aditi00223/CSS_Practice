@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Car Racing Animation</title>
+
+    <style>
+        body {
+            background: lightblue;
+            overflow-x: hidden;
+            margin: 0;
+        }
+
+        h1 {
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+
+        .track {
+            margin-top: 30px;
+        }
+
+        img {
+            width: 180px;
+            height: 100px;
+            object-fit: cover;
+            position: relative;
+            border-radius: 10px;
+        }
+
+        .car1 {
+            animation: race 3s infinite alternate ease-in-out;
+        }
+
+        .car2 {
+            animation: race 5s infinite alternate ease-in-out;
+        }
+
+        .car3 {
+            animation: race 7s infinite alternate ease-in-out;
+        }
+
+        @keyframes race {
+            from {
+                left: 0;
+            }
+
+            to {
+                left: 80%;
+            }
+        }
+
+        .finish {
+            position: fixed;
+            right: 40px;
+            top: 100px;
+            width: 12px;
+            height: 350px;
+            background: repeating-linear-gradient(
+                white 0px,
+                white 20px,
+                black 20px,
+                black 40px
+            );
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>🏁 Car Racing Championship 🏁</h1>
+
+    <div class="finish"></div>
+
+    <div class="track">
+
+        <img src="https://thfvnext.bing.com/th/id/OIP.roHntiwsK2sQ73ICkLPmaAHaE8?o=7&cb=thfvnextfalcon2rm=3&rs=1&pid=ImgDetMain&o=7&rm=3"
+             class="car1">
+
+        <br><br><br>
+
+        <img src="https://thfvnext.bing.com/th/id/OIP.6TzUKgrjn5wFift4xQk8aAHaEK?o=7&cb=thfvnextfalcon2rm=3&rs=1&pid=ImgDetMain&o=7&rm=3"
+             class="car2">
+
+        <br><br><br>
+
+        <img src="https://tse3.mm.bing.net/th/id/OIP.zuOXZStcjEAZAjdFFyVRlAHaEK?cb=thfvnextfalcon2&rs=1&pid=ImgDetMain&o=7&rm=3"
+             class="car3">
+
+    </div>
+
+</body>
+</html>
